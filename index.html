@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Javascript file -->
+    <script src="./JavaScript/index.js" defer></script>
+
+    <!-- Font awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app-box">
+        <!-- Search box -->
+        <div class="search-box">
+            <input type="text" name="" id="input" placeholder="enter city name">
+            <i class="search-btn fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="error-message"> <img src="./images/errorimg.webp" alt=""> <br>Location not found<br> Try again?</div>
+
+        <!-- Data -->
+        <div class="data-display">
+            <div class="main-data">
+                <div class="temp"><span class="temp-value">0</span><span class="degree">°C</span></div>
+                <div class="img-box">
+                    <img class="w-img"  alt="">
+                </div>
+            </div>
+            <div class="location">City</div>
+
+            <div class="sub-data">
+                <div class="sub-data-box">
+                    <img class="img-humadity" src="./images/humidity.png" alt="">
+                    <div>
+                        <div class="w-value h-value"></div>
+                        <div class="w-tag">Humidity</div>
+                    </div>
+                </div>
+                <div class="sub-data-box">
+                    <img src="./images/wind.png" alt="">
+                    <div>
+                        <div class="w-value s-value"></div>
+                        <div class="w-tag">Wind Speed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

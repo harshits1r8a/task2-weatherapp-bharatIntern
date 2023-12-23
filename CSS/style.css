@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1603437873662-dc1f44901825?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.app-box {
+  width: 40%;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(244, 244, 244, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 0 40px;
+  z-index: 9999;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.data-display {
+  display: none;
+}
+
+#input {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #787474;
+}
+
+#input::placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: #787474c4;
+  font-size: 16px;
+}
+
+.fa-solid {
+  background: #fff;
+  font-size: 25px;
+  margin-left: 20px;
+  padding: 10px;
+  color: #787474c4;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-solid:hover {
+  scale: 0.9;
+}
+
+.sub-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.sub-data-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-data-box > img {
+  margin-right: 15px;
+  width: 50px;
+}
+
+.w-value {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.w-tag {
+  letter-spacing: 1px;
+}
+
+.main-data {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.location {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.temp {
+  display: flex;
+  align-items: start;
+}
+
+.degree {
+  padding-top: 15px;
+  font-size: 30px;
+}
+
+.temp-value {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.img-box {
+  display: inline-block;
+}
+
+.img-box > img {
+  width: 60px;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+
+.bg-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.error-message {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgba(72, 71, 71, 0.605);
+  font-weight: 700;
+  font-size: 20px;
+  display: none;
+  margin-top: -40px;
+}
+
+.error-message > img {
+  width: 150px;
+}
+
+@media only screen and (max-width: 900px) {
+  .app-box {
+    width: 60%;
+  }
+  #input {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #787474;
+  }
+
+  #input::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #787474c4;
+    font-size: 16px;
+  }
+
+  .fa-solid {
+    background: #fff;
+    font-size: 15px;
+    margin-left: 18px;
+    padding: 10px;
+  }
+
+  .location {
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  .w-value {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .w-tag {
+    /* letter-spacing: 1px; */
+    font-size: 12px;
+  }
+
+  .sub-data-box:first-child {
+    margin-right: 25px;
+  }
+
+  .sub-data-box > img {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .app-box {
+    width: 80%;
+  }
+
+  #input {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #787474;
+  }
+
+  #input::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #787474c4;
+    font-size: 16px;
+  }
+
+  .fa-solid {
+    background: #fff;
+    font-size: 15px;
+    margin-left: 8px;
+    padding: 10px;
+  }
+
+  .location {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .w-value {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .w-tag {
+    /* letter-spacing: 1px; */
+    font-size: 10px;
+  }
+
+  .sub-data-box:first-child {
+    margin-right: 20px;
+  }
+
+  .temp-value {
+    font-size: 50px;
+    font-weight: 400;
+  }
+
+  .degree {
+    padding-top: 15px;
+    font-size: 15px;
+  }
+
+  .sub-data-box > img {
+    width: 28px;
+  }
+
+  .img-box > img {
+    padding-top: 0;
+  }
+}
